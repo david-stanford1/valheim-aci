@@ -13,3 +13,7 @@ az deployment group create --resource-group "<resource-group>" `
     --parameters valheimServerPassword yourSuperSecretPassword 
 
 ```
+
+This diverges from the base in two ways:
+1) I added support for crossplay by adding SERVER_ARGS as well as a flag that lets you make it a public server or not.
+2) I removed the regions that my friends and I don't use so it's faster to launch.
