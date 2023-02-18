@@ -167,6 +167,10 @@
                                 {
                                     "name": "WORLD_NAME",
                                     "value": "[parameters('valheimWorldName')]"
+                                },
+                                {
+                                    "name": "SERVER_ARGS",
+                                    "value": "-crossplay"
                                 }
                             ],
                             "ports": "[parameters('ports')]",
