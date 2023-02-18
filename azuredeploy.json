@@ -34,7 +34,7 @@
                 "Always",
                 "Never"
             ],
-            "defaultValue": "Never"
+            "defaultValue": "Always"
         },
         "valheimServerName": {
             "type": "string"
