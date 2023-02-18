@@ -5,30 +5,7 @@
       "location": {
         "type": "string",
         "allowedValues": [
-          "westcentralus",
-          "westus",
-          "eastus",
-          "westeurope",
-          "westus2",
-          "northeurope",
-          "southeastasia",
-          "eastus2",
-          "centralus",
-          "australiaeast",
-          "uksouth",
-          "southcentralus",
-          "centralindia",
-          "brazilsouth",
-          "southindia",
-          "northcentralus",
-          "eastasia",
-          "canadacentral",
-          "japaneast",
-          "koreacentral",
-          "francecentral",
-          "switzerlandnorth",
-          "germanywestcentral",
-          "uaenorth"
+          "westus2"
         ]
       },
         "containerName": {
@@ -44,11 +21,11 @@
         },
         "numberCpuCores": {
             "type": "string",
-            "defaultValue": "4"
+            "defaultValue": "1"
         },
         "memory": {
             "type": "string",
-            "defaultValue": "8"
+            "defaultValue": "6"
         },
         "restartPolicy": {
             "type": "string",
@@ -57,7 +34,7 @@
                 "Always",
                 "Never"
             ],
-            "defaultValue": "Always"
+            "defaultValue": "Never"
         },
         "valheimServerName": {
             "type": "string"
@@ -167,6 +144,10 @@
                                 {
                                     "name": "WORLD_NAME",
                                     "value": "[parameters('valheimWorldName')]"
+                                },
+                                {
+                                    "name": "SERVER_PUBLIC",
+                                    "value": "false"
                                 },
                                 {
                                     "name": "SERVER_ARGS",
